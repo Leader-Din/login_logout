@@ -11,12 +11,7 @@
 	<link rel="stylesheet" href=
 "https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
 	<style>
-		* {
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-			font-family: "poppins";
-		}
+	
 
 		.bg_img {
 			background: url(
@@ -36,10 +31,8 @@
 		<div class="d-flex justify-content-center 
 					align-items-center flex-column 
 					text-center w-100">
-			<div class="bg_img w-50">
-			</div>
 			<div>
-				<p class="display-4">You can't login please login with correct password</p>
+				<p class="display-4">You can't login please login with correct password or correct email</p>
 				<a href="/users/login"
 				class="text-white text-decoration-none px-4 py-3 
 						bg-success d-inline-block mt-2 rounded">
