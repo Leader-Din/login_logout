@@ -19,5 +19,6 @@ $route->delete("/users/delete/{id}", [UserController::class, 'delete']);
 $route->get ("/users/login", [UserController::class, 'login']);
 $route->get ("/users/logout", [UserController::class, 'logout']);
 $route->post("/users/authenticate", [UserController::class, 'authenticate']);
+$route->get("/users/login-error", [UserController::class, 'loginError']);
 
 $route->route();

@@ -63,7 +63,8 @@ class UserController extends BaseController {
             $_SESSION['user_role'] = $user['role'];
             $this->redirect("/users");
         } else {
-            $this->view('users/login', ['error' => 'Invalid email or password']);
+            header("Location: /users/login-error");
+            exit();
         }    
         
     }
@@ -73,5 +74,9 @@ class UserController extends BaseController {
         session_unset();
         session_destroy();
         $this->redirect("/");
+    }
+
+    public function loginError() {
+        $this->view('login_error');
     }
 }
